@@ -15,13 +15,28 @@ const Gradient = ({ left, top }) => {
 function App() {
 
   return (
-    <>
+    <div className="relative min-h-screen">
       <Navbar />
-      <Gradient left="2" top="-100"/>
-      <Gradient left="1200" top="-100"/>
-      <Gradient left="500" top="400"/>
+      {/* Responsive Gradients */}
+      <Gradient left="2" top="-50"/>
+      <div className="hidden sm:block">
+        <Gradient left="300" top="-80"/>
+      </div>
+      <div className="hidden md:block">
+        <Gradient left="600" top="-100"/>
+      </div>
+      <div className="hidden lg:block">
+        <Gradient left="1200" top="-100"/>
+      </div>
+      <div className="hidden xl:block">
+        <Gradient left="1500" top="-100"/>
+      </div>
+      <Gradient left="150" top="250"/>
+      <div className="hidden md:block">
+        <Gradient left="500" top="400"/>
+      </div>
       <Hero />
-    </>
+    </div>
   )
 }
 
