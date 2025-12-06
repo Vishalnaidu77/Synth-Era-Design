@@ -81,4 +81,4 @@ const container = useRef()
   )
 }
 
-export default Hero
+export default Hero;
