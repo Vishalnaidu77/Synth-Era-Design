@@ -25,7 +25,7 @@ const container = useRef()
       scale: 0,
       rotate: 360,
       delay: 2.5,
-      duration: 1
+      duration: 1,
     })
 
     gsap.from(".sub-heading > h1, .side-text", {
@@ -42,7 +42,7 @@ const container = useRef()
       <h1 className='text-[4rem] sm:text-[6rem] md:text-[10rem] lg:text-[15rem] xl:text-[19rem] 2xl:text-[22rem] absolute -top-8 sm:-top-12 md:-top-16 lg:-top-24 xl:-top-28 racing-sans z-[22] brand uppercase whitespace-nowrap'>Synth Era</h1>
       
       {/* Jacket Image */}
-      <img src="../Jacket.svg" alt="Jacket" className='jacket h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[750px] 2xl:h-[850px] z-[55] absolute mt-4 sm:mt-0'/>
+      <img src="../Jacket.svg" alt="Jacket" className='jacket h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] xl:h-[750px] 2xl:h-[850px] z-[55] fixed mt-4 sm:mt-0'/>
       
       {/* Sub-heading: Modern & Armor */}
       <div className="sub-heading flex gap-[100px] sm:gap-[150px] md:gap-[250px] lg:gap-[420px] xl:gap-[500px] 2xl:gap-[600px] absolute top-16 sm:top-24 md:top-28 lg:top-36 xl:top-40">
